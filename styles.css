@@ -1,10 +1,177 @@
-header{
-    font-size: 42px;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(64, 51, 54);
+@font-face {
+    font-family: 'MyCoolFont';
+    src: url(./assets/Norse-Bold.otf);
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 body{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(75, 74, 74, 0.801) ;
+}
+
+div.left-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/james-owen-c-NBiJrhwdM-unsplash.jpg);
+    background-size: cover;
+    width: 25%;
+
+}
+
+div.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(10, 10, 2);
+    opacity: 0.5;
+    width: 100%;
+    position: relative;
+    bottom: 20vh;
+}
+
+img.logo{
+    height: 100px;
+    width: auto;
+    border-radius: 15%;
+    opacity: 1;
+}
+
+h1{
+    font-family: MyCoolFont;
+    font-size: 100px;
+    opacity: 1;
+    color: whitesmoke;
+}
+
+div.left-container > p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    position: relative;
+    top: 42vh;
+    color: white;
+    text-decoration: none;
+}
+
+p > a{
+    color: white;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+div.right-container{
+    background-color: rgb(235, 240, 240);
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+div > div.text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 30px;
+    padding-left: 35px;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+div.form-container{
+    background-color: white;
+    padding-left: 35px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 30vh;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.705);
+    position: relative;
+    bottom: 100px;
+}
+
+div.inputs-container{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 90px;
+    justify-content: flex-start;
+    row-gap: 15px;
+
+}
+
+div.inputs-container > div{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: darkblue;
+}
+
+input{
+    border: 1px solid rgba(0, 0, 0, 0.432);
+    border-radius: 4px;
+    height: 2em;
+    width: 280px;
+}
+
+input:focus{
+    border: 1px solid #0060d5;
+    border-radius: 4px;
+    height: 2em;
+    width: 240px;
+}
+
+div.form-footer{
+    padding-left: 35px;
+}
+
+div > button{
+    position: relative;
+    bottom: 40px;
+    background-color: #0060d5;
+    border: 1px solid #0060d588;
+    border-radius: 10px;
+    height: 50px;
+    width: 240px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+h6 > a {
+    text-decoration: none;
+    color: #0060d5;
+    font-weight: 600;
 }
